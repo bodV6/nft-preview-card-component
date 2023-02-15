@@ -1,0 +1,218 @@
+/* variable: color scheme, font-size, imported google fonts */
+:root {
+  /* Primary Color */
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+  --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+  --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-size: 1.125rem;
+
+  /* Font */
+  --Outfit: "Outfit", sans-serif;
+}
+
+/* Use Board-Box Model */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--Outfit);
+  background-color: var(--Very-dark-blue-mainBG);
+  color: var(--White);
+  font-size: var(--font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p,
+hr {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+a:hover {
+  color: var(--Cyan);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  flex-basis: 90%;
+  height: 40rem;
+  background-color: var(--Very-dark-blue-cardBG);
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.card-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-image {
+  border: 1px solid blue;
+  position: relative;
+  height: 60%;
+  /* display: none; */
+}
+.main-image .equil-image {
+  display: none;
+  border: 1px solid red;
+}
+
+.main-image .view-image {
+  border: 1px solid red;
+  /* display: none; */
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 40%;
+}
+
+.main-image img {
+  /* display: block; */
+  border-radius: 10px;
+}
+
+.overlay {
+  border: 1px solid green;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* top: 0; */
+  background-color: var(--Cyan);
+  /* background-image: url(./images/icon-view.svg); */
+  /* background-size: contain; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.overlay img {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  /* top: 0; */
+  /* left: 50%; */
+} 
+
+.main-image:hover .overlay{
+  opacity: 0.5;
+}
+
+.card-details {
+  min-height: 40%;
+}
+
+.product-desc {
+  margin: 1rem 0;
+}
+
+.product-desc h2 a {
+  font-size: calc(var(--font-size) + 0.3rem);
+}
+
+.product-desc p {
+  color: var(--Soft-blue);
+  font-size: calc(var(--font-size) * 0.95);
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.price-duration {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eth-price {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 30%;
+}
+
+.eth-price img {
+  width: 0.8rem;
+  height: 1rem;
+  /* display: inline; */
+}
+
+.eth-price h3 {
+  color: var(--Cyan);
+  /* display: inline; */
+  font-size: calc(var(--font-size) * 0.9);
+}
+
+.clock-duration {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 30%;
+}
+
+.clock-duration img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.clock-duration p {
+  color: var(--Soft-blue);
+  font-size: calc(var(--font-size) * 0.8);
+}
+
+hr {
+  border: 1px var(--Very-dark-blue-line) solid;
+  margin: 1rem 0;
+}
+
+.owner-tag {
+  display: flex;
+  /* justify-content: space-; */
+  /* gap: 2rem; */
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid var(--White);
+  width: 2rem;
+}
+
+.owner-tag p {
+  font-size: calc(var(--font-size) * 0.9);
+  color: var(--Soft-blue);
+  margin-left: 1rem;
+  padding-top: 0.5rem;
+}
