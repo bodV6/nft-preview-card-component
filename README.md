@@ -29,8 +29,8 @@ This is a solution to the [ NFT-Preview-Card component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [FrontEnd MEntor](https://www.frontendmentor.io/solutions/qr-code-component-using-html-css-80iFHw_JxS)
-- Live Site URL: [Github webpage](https://bodv6.github.io/QR-Code-Component/)
+- Solution URL: [FrontEnd MEntor](https://www.frontendmentor.io/solutions/nft-preview-card-component-with-html-and-css-yBJpXNP31m)
+- Live Site URL: [Github webpage](https://bodv6.github.io/nft-preview-card-component/)
 
 
 ### Built with
